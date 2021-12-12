@@ -51,25 +51,29 @@ export default function TextForm(props) {
             <div className="mb-3">
             <textarea className="form-control" id="myBox" value={text} onChange={handleOnChange} rows="8"></textarea>
             </div>
+            
+            <div className="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <button className="btn btn-primary" onClick={handleUpClick}>
              Convert to UPPERCASE
             </button>
-            <button className="btn btn-primary mx-2" onClick={handleLoClick}>
+            <button className="btn btn-primary mx-2 my-2" onClick={handleLoClick}>
              Convert to Lowercase
             </button>
-            <button className="btn btn-primary mx-2" onClick={handleDupClick}>
+            <button className="btn btn-primary mx-2 my-2" onClick={handleDupClick}>
              Duplicate text
             </button>
-            <button className="btn btn-primary mx-2" onClick={handleCopy}>
+            <button className="btn btn-primary mx-2 my-2" onClick={handleCopy}>
              Copy text
             </button>
-            <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>
+            <button className="btn btn-primary mx-2 my-2" onClick={handleExtraSpaces}>
              Remove extra space
             </button>
-            <button className="btn btn-primary mx-2" onClick={handleClearClick}>
+            <button className="btn btn-primary mx-2 my-2" onClick={handleClearClick}>
              Clear text
             </button>
-         
+            </div>
+            </div>
         </div>
         <div className="container my-3">
             <h2> Your text summary</h2>
