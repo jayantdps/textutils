@@ -28,6 +28,12 @@ if (mode === 'light'){
   setMode ('dark');
   document.body.style.backgroundColor = '#042743';
   showAlert(" Dark mode has been enabled!", "success");
+  setInterval(() => {
+    document.title = 'TextUtils!';
+  }, 2000);
+  setInterval(() => {
+    document.title = 'Created by Jayant';
+  }, 1500);
 }
 else {
   setMode ('light'); 
