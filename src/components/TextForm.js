@@ -6,6 +6,7 @@ export default function TextForm(props) {
         // console.log("uppercase was clicked" + text);
         let newText = text.toUpperCase();
         setText(newText);
+        
     }
     const handleLoClick = () =>{
         // console.log("uppercase was clicked" + text);
@@ -16,6 +17,7 @@ export default function TextForm(props) {
         // console.log("uppercase was clicked" + text);
         let newText = '';
         setText(newText);
+        props.showAlert("text cleared", "warning");
     }
     const handleDupClick = () =>{
         // console.log("uppercase was clicked" + text);
@@ -54,8 +56,8 @@ export default function TextForm(props) {
             </div>
             
             <div className="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <button className="btn btn-primary" onClick={handleUpClick}>
+            <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <button className="btn btn-primary mx-2 my-2" onClick={handleUpClick}>
              Convert to UPPERCASE
             </button>
             <button className="btn btn-primary mx-2 my-2" onClick={handleLoClick}>
