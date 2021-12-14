@@ -5,6 +5,13 @@ import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
+// able to use this app.import React from "react";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 function App() {
@@ -44,13 +51,22 @@ else {
 
   return (
  <>
- <Navbar title= "TextUtils by Jayant" aboutText="About TextUtils" mode={mode} toggleMode={toggleMode}/>
+ {/* <Router> */}
+    <Navbar title= "TextUtils by Jayant" aboutText="About TextUtils" mode={mode} toggleMode={toggleMode}/>
  <Alert alert={alert}/>
 
  <div className="container my-3">
- <TextForm showAlert={showAlert} heading = "Enter the text to analyze below" mode={mode}/>
- {/* <About /> */}
- </div>
+          {/* <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+            <Route path="/"> */}
+            <TextForm showAlert={showAlert} heading = "Enter the text to analyze below" mode={mode}/>
+          {/* </Route>
+        </Switch> */}
+        </div>
+        {/* </Router> */}
+
  </>
   );
 }
